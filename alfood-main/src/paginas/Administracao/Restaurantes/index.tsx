@@ -24,7 +24,7 @@ const AdiministracaoRestaurante = () => {
   };
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} sx={{padding: 5, boxSizing: 'border-box'}}>
       <Table>
         <TableHead>
           <TableRow>

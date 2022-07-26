@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import http from '../../../http';
 import IRestaurante from '../../../interfaces/IRestaurante';
 
+
 const FormularioRestaurante = () => {
 
   const [nome, setNome] = useState('');
@@ -33,7 +34,7 @@ const FormularioRestaurante = () => {
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <Box>
       <Typography component='h1' variant='h6'>Formulário de Restaurantes</Typography>
       <Box component='form' onSubmit={aoSubmeterForm}>
         <TextField
@@ -45,7 +46,7 @@ const FormularioRestaurante = () => {
           fullWidth
           required
         />
-        <Button sx={{marginTop: 1}} variant='outlined' fullWidth type='submit'>Salvar</Button>
+        <Button sx={{ marginTop: 1 }} variant='outlined' fullWidth type='submit'>Salvar</Button>
       </Box>
     </Box>
   );
